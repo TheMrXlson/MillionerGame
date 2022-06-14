@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		D60B84AF2853B97000992BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B84AE2853B97000992BE2 /* AppDelegate.swift */; };
 		D60B84B12853B97000992BE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B84B02853B97000992BE2 /* SceneDelegate.swift */; };
-		D60B84B32853B97000992BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B84B22853B97000992BE2 /* ViewController.swift */; };
 		D60B84B62853B97000992BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60B84B42853B97000992BE2 /* Main.storyboard */; };
 		D60B84B82853B97400992BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60B84B72853B97400992BE2 /* Assets.xcassets */; };
 		D60B84BB2853B97400992BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60B84B92853B97400992BE2 /* LaunchScreen.storyboard */; };
+		D60B84C32853BBFD00992BE2 /* QuestionsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B84C22853BBFD00992BE2 /* QuestionsStruct.swift */; };
+		D60B84C52856438A00992BE2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B84C42856438A00992BE2 /* MainViewController.swift */; };
+		D61257F4285754EA007B654D /* GameSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61257F3285754EA007B654D /* GameSingleton.swift */; };
+		D61257F62857567C007B654D /* RecordsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61257F52857567C007B654D /* RecordsCaretaker.swift */; };
+		D61257F82857734E007B654D /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61257F72857734E007B654D /* RecordsViewController.swift */; };
+		D61257FA2857A590007B654D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61257F92857A590007B654D /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D60B84AB2853B97000992BE2 /* MillionerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MillionerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B84AE2853B97000992BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D60B84B02853B97000992BE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D60B84B22853B97000992BE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D60B84B52853B97000992BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D60B84B72853B97400992BE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D60B84BA2853B97400992BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60B84BC2853B97400992BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60B84C22853BBFD00992BE2 /* QuestionsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsStruct.swift; sourceTree = "<group>"; };
+		D60B84C42856438A00992BE2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D61257F3285754EA007B654D /* GameSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSingleton.swift; sourceTree = "<group>"; };
+		D61257F52857567C007B654D /* RecordsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsCaretaker.swift; sourceTree = "<group>"; };
+		D61257F72857734E007B654D /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		D61257F92857A590007B654D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				D60B84AE2853B97000992BE2 /* AppDelegate.swift */,
 				D60B84B02853B97000992BE2 /* SceneDelegate.swift */,
-				D60B84B22853B97000992BE2 /* ViewController.swift */,
 				D60B84B42853B97000992BE2 /* Main.storyboard */,
+				D60B84C22853BBFD00992BE2 /* QuestionsStruct.swift */,
+				D61257F72857734E007B654D /* RecordsViewController.swift */,
+				D61257F3285754EA007B654D /* GameSingleton.swift */,
+				D60B84C42856438A00992BE2 /* MainViewController.swift */,
+				D61257F92857A590007B654D /* GameViewController.swift */,
+				D61257F52857567C007B654D /* RecordsCaretaker.swift */,
 				D60B84B72853B97400992BE2 /* Assets.xcassets */,
 				D60B84B92853B97400992BE2 /* LaunchScreen.storyboard */,
 				D60B84BC2853B97400992BE2 /* Info.plist */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60B84B32853B97000992BE2 /* ViewController.swift in Sources */,
 				D60B84AF2853B97000992BE2 /* AppDelegate.swift in Sources */,
+				D61257F82857734E007B654D /* RecordsViewController.swift in Sources */,
+				D61257F62857567C007B654D /* RecordsCaretaker.swift in Sources */,
+				D60B84C32853BBFD00992BE2 /* QuestionsStruct.swift in Sources */,
+				D61257FA2857A590007B654D /* GameViewController.swift in Sources */,
 				D60B84B12853B97000992BE2 /* SceneDelegate.swift in Sources */,
+				D61257F4285754EA007B654D /* GameSingleton.swift in Sources */,
+				D60B84C52856438A00992BE2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
