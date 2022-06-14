@@ -8,8 +8,10 @@
 import UIKit
 
 class RecordsViewController: UIViewController {
+   
     @IBAction func deleteRecords(_ sender: Any) {
         GameSingleton.shared.clearRecords()
+        tableView.reloadData()
     }
     
     private let dateFormatter: DateFormatter = {
@@ -38,7 +40,7 @@ extension RecordsViewController: UITableViewDataSource {
         let record = GameSingleton.shared.records[indexPath.row]
         
         cell.textLabel?.text = dateFormatter.string(from: record.date)
-        cell.detailTextLabel?.text = "\(record.score)"
+        cell.detailTextLabel?.text = "\(record.score) из \(GameSingleton.shared.questions.count)"
         
         return cell
     }
