@@ -40,7 +40,7 @@ extension RecordsViewController: UITableViewDataSource {
         let record = GameSingleton.shared.records[indexPath.row]
         
         cell.textLabel?.text = dateFormatter.string(from: record.date)
-        cell.detailTextLabel?.text = "\(record.score) из \(GameSingleton.shared.questions.count)"
+        cell.detailTextLabel?.text = "\(record.score) из 3, сложность: \(record.difficult)"
         
         return cell
     }

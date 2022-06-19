@@ -18,16 +18,17 @@ final class GameViewController: UIViewController {
     @IBOutlet weak var answerB: UIButton!
     @IBOutlet weak var answerC: UIButton!
     @IBOutlet weak var answerD: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
     
     weak var delegate: GameViewControllerDelegate?
-    
-    private let questions: Questions = GameSingleton.shared.questions
     private var numberOfQuestion = 0
     private var score = 0
+    // MARK: - Questions
+    private var questions: Questions = GameSingleton.shared.getQuestions()
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         config()
     }
     // MARK: - Button
@@ -51,6 +52,8 @@ final class GameViewController: UIViewController {
         if questions[numberOfQuestion].answer == answer {
             score += 1
             numberOfQuestion += 1
+            let progress = Float(numberOfQuestion) / Float(questions.count)
+            self.progressBar.setProgress(progress, animated: true)
             config()
         } else {
             falseAnswer()
